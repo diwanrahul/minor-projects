@@ -1,0 +1,34 @@
+.modal{
+    position: fixed;
+    z-index: 1;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-image: linear-gradient(to bottom right, orange, blue);
+    animation-name: animateModal;
+    animation-duration: 0.5s;
+}
+
+.modal-content{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid red;
+    width: 80%;
+}
+
+@keyframes animateModal {
+    from{
+        top: -200px;
+        opacity: 0;
+    }
+
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
